@@ -1,0 +1,53 @@
+/* Logo Preview */
+.logo-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  
+  .logo-preview img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    margin-top: 10px;
+    color: #ffae00ce;
+  } 
+  
+  .remove-logo {
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-logo:hover {
+    background-color: #c82333;
+  }
+  
+  /* Adjusted Textarea */
+  .register-card textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+  }
+  
+  .register-card textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  }
+  

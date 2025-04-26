@@ -1,0 +1,78 @@
+.reg-clubs-container {
+    padding: 40px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    min-height: 100vh;
+    /* animation: fadeInContainer 1s ease forwards; */
+  }
+  
+  .reg-clubs-container h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+    animation: slideInDown 1s ease forwards;
+  }
+  
+  .reg-clubs-container h2 span {
+    color: #ffea00;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    animation: fadeInUp 1.2s ease forwards;
+  }
+  
+  .reg-clubs-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .reg-clubs-table th,
+  .reg-clubs-table td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .reg-clubs-table thead th {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .reg-clubs-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .paid {
+    color: #00ff7f;
+    font-weight: bold;
+  }
+  
+  .pending {
+    color: #ff4c4c;
+    font-weight: bold;
+  }
+  
+  /* Animations */
+  @keyframes fadeInContainer {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes slideInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  

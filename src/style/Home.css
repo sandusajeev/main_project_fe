@@ -42,7 +42,7 @@
   }
   
   .login-btn-overlay .login_btn {
-    background-color: #002aff;
+    background-color: #FFB300 !important;
     color: white;
     padding: 10px 20px;
     border-radius: 20px;

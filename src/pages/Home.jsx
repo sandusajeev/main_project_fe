@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/Home.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -10,7 +11,9 @@ function Home() {
           <h1>Welcome to MatchPass</h1>
           <p>Manage. Play. Win.</p>
           {/* Login Button under the text */}
+          <Link to="/login" style={{ textDecoration: 'none', color: "white" }}>
           <button className='login_btn mt-3'>LOGIN</button>
+          </Link>
         </div>
         <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
@@ -33,10 +36,14 @@ function Home() {
         <div className='container'>
           <div className='row justify-content-center'>
             <div className='col-md-6 glass-box d-flex flex-column justify-content-center align-items-center' id='register_div'>
-              <p>Don't have an Account?</p>
+              <p style={{color:'black'}}>Don't have an Account?</p>
               <div className='d-flex justify-content-center'>
+              <Link to="/registerorg" style={{ textDecoration: 'none', color: "white" }}>
                 <button className='reg_btn me-2'>Register as Organisation</button>
+                </Link>
+                <Link to="/registerclub" style={{ textDecoration: 'none', color: "white" }}>
                 <button className='reg_btn'>Register as Club</button>
+                </Link>
               </div>
             </div>
           </div>

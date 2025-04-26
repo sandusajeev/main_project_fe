@@ -1,0 +1,94 @@
+.view-events-container {
+    padding: 40px;
+    background: linear-gradient(to right, #002347, #004080);
+    min-height: 100vh;
+  }
+  
+  .view-events-container h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .view-events-container h2 span {
+    color: #ffae00ce;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+  }
+  
+  .event-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+  }
+  
+  .event-logo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .event-card h3 {
+    color: #002347;
+    margin-bottom: 10px;
+  }
+  
+  .event-card p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .event-buttons {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .event-buttons button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .view-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .update-btn {
+    background-color: #ffae00ce;
+    color: white;
+  }
+  
+  .update-btn:hover {
+    background-color: #e69a00;
+  }
+  

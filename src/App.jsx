@@ -8,6 +8,9 @@ import Clubs from './pages/Clubs'
 import Home from './pages/Home'
 import Organisation from './pages/Organisation'
 import Login from './pages/Login'
+import RegisterOrg from './pages/RegisterOrg'
+import RegisterClub from './pages/RegisterClub'
+import DashboardOrg from './Organisation/DashboardOrg'
 
 function App() {
 
@@ -15,9 +18,15 @@ function App() {
   return (
     <>
       <Header />
-      <Login/>
+      <DashboardOrg/>
       {/* <Routes>
       <Route path="/" element={<Home />}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/registerorg" element={<RegisterOrg/>}/>
+      <Route path="/registerclub" element={<RegisterClub/>}/>
+
+
+
       <Route path="/auth" element={ <Admin />}/>
       <Route path="/dashboard" element={<Organisation />}/>
       <Route path="/project" element={ <Clubs />}/>
