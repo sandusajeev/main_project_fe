@@ -1,0 +1,90 @@
+/* Entire header wrapper */
+.header-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  /* Full-width background section */
+  .header-remaining {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark blue */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  
+  /* Clipped logo section overlaid */
+  .clipped-brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 45%;
+    background: linear-gradient(135deg, #FFD700, #FFB300); /* Yellow */
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  /* Icon + heading */
+  .brand-content {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .brand-heading {
+    margin-left: 10px;
+    font-family: 'cursive';
+    font-size: 28px;
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0;
+    color: black;
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  /* Nav links */
+  .nav-links {
+    display: flex;
+    gap: 25px;
+    color: white;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding: 10px 24px !important;         /* More padding for bigger background */
+    border-radius: 30px;        /* More rounded */
+    transition: all 0.3s ease;
+  }
+  
+  a.nav-link:hover {
+    background-color: #FFD700;
+    color: black !important;
+    border-radius: 30px;
+  }
+  
+
+
+  
+  

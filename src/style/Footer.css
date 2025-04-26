@@ -1,0 +1,65 @@
+/* Footer Container */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  /* Footer Heading and Icon Styles */
+  .footer h5, .footer h6 {
+    color: #ffcc00;
+    font-weight: 700;
+  }
+  
+  .footer i {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Icon Animation on Hover */
+  .footer-icon {
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .footer-icon:hover {
+    color: #ffcc00; /* Highlight icon on hover */
+    transform: scale(1.2); /* Scale icon on hover */
+    cursor: pointer;
+  }
+  
+  /* Links Style */
+  .footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .footer a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  /* Footer Bottom Text */
+  .footer p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  /* Add some padding and spacing in between */
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Social Media Icons Section */
+  #contact i {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  #contact i:hover {
+    transform: scale(1.2); /* Scale up the icons */
+    color: #ffcc00; /* Change color to match theme */
+  }
+  
+  
