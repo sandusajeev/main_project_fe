@@ -1,0 +1,86 @@
+.reg-events-container {
+    padding: 40px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    min-height: 100vh;
+  }
+  
+  .reg-events-container h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+    animation: slideInDown 1s ease forwards;
+  }
+  
+  .reg-events-container h2 span {
+    color: #ffd700;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    animation: fadeInUp 1.2s ease forwards;
+  }
+  
+  .reg-events-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .reg-events-table th,
+  .reg-events-table td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .reg-events-table thead th {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .reg-events-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .download-btn {
+    background-color: #ffd700;
+    color: #002147;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+  }
+  
+
+  @keyframes slideInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .reg-events-table th, .reg-events-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  

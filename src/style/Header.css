@@ -1,4 +1,4 @@
-/* Entire header wrapper */
+
 .header-wrapper {
     position: relative;
     width: 100%;
@@ -6,25 +6,25 @@
     overflow: hidden;
   }
   
-  /* Full-width background section */
+ 
   .header-remaining {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark blue */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 40px;
   }
   
-  /* Clipped logo section overlaid */
+  
   .clipped-brand {
     position: absolute;
     top: 0;
     left: 0;
     height: 100px;
     width: 45%;
-    background: linear-gradient(135deg, #FFD700, #FFB300); /* Yellow */
+    background: linear-gradient(135deg, #FFD700, #FFB300); 
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@
     z-index: 2;
   }
   
-  /* Icon + heading */
+ 
   .brand-content {
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@
     color: black;
   }
   
-  /* Slide-in animation */
+  
   @keyframes slideIn {
     0% {
       transform: translateX(100px);
@@ -61,7 +61,7 @@
     }
   }
   
-  /* Nav links */
+
   .nav-links {
     display: flex;
     gap: 25px;
@@ -73,8 +73,8 @@
     font-weight: bold;
     font-size: 16px;
     color: white;
-    padding: 10px 24px !important;         /* More padding for bigger background */
-    border-radius: 30px;        /* More rounded */
+    padding: 10px 24px !important;         
+    border-radius: 30px;        
     transition: all 0.3s ease;
   }
   

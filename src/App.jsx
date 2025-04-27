@@ -3,14 +3,17 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import Admin from './pages/Admin'
-import Clubs from './pages/Clubs'
 import Home from './pages/Home'
-import Organisation from './pages/Organisation'
 import Login from './pages/Login'
 import RegisterOrg from './pages/RegisterOrg'
 import RegisterClub from './pages/RegisterClub'
 import DashboardOrg from './Organisation/DashboardOrg'
+import DashboardClub from './Club/DashboardClub'
+import DashboardAdmin from './Admin/DashboardAdmin'
+import AboutUs from './components/AboutUs'
+import ContactUs from './components/ContactUs'
+
+
 
 function App() {
 
@@ -18,8 +21,7 @@ function App() {
   return (
     <>
       <Header />
-      <DashboardOrg/>
-      {/* <Routes>
+      <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/registerorg" element={<RegisterOrg/>}/>
@@ -27,10 +29,12 @@ function App() {
 
 
 
-      <Route path="/auth" element={ <Admin />}/>
-      <Route path="/dashboard" element={<Organisation />}/>
-      <Route path="/project" element={ <Clubs />}/>
-     </Routes>       */}
+      <Route path="/dashboardadmin/*" element={ <DashboardAdmin/>}/>
+      <Route path="/dashboardorg/*" element={<DashboardOrg />} />
+      <Route path="/dashboardclub/*" element={ <DashboardClub/>}/>
+      <Route path="/aboutus" element={ <AboutUs/>}/>
+      <Route path="/contactus" element={ <ContactUs/>}/>
+     </Routes>      
       <Footer />
     </>
   )

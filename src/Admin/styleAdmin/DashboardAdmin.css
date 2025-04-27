@@ -1,0 +1,13 @@
+.admin-dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-nav {
+  flex: 0 0 30%;
+  max-width: 20%;
+}
+
+.admin-home {
+  flex: 1;
+}

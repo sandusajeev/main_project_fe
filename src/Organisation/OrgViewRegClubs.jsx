@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 function OrgViewRegClubs() {
   return (
     <div className="reg-clubs-container">
-        {/* Back Button */}
-        <Link to="/orgviewevents">
+        <Link to="/dashboardorg/orgviewevents">
       <button className="back-button bg-warning rounded p-2"><i class="fa-solid fa-arrow-left"></i>Back</button>
       </Link>
       <h2>Registered <span>Clubs</span></h2>
@@ -43,7 +42,6 @@ function OrgViewRegClubs() {
               <td>₹300</td>
               <td><span className="paid">Paid</span></td>
             </tr>
-            {/* Add more rows if needed */}
           </tbody>
         </table>
       </div>

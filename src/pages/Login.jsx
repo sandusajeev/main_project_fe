@@ -1,68 +1,37 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import '../style/Login.css';
+import { Link } from 'react-router-dom';
 
-function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const [animate, setAnimate] = useState(false);  // for animation
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    setAnimate(true); // Trigger animation on page load
-  }, []);
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-
-    if (!email || !password) {
-      setError('Please fill in both fields.');
-      return;
-    }
-
-    // Authentication logic can go here
-  };
-
+function LoginPage() {
   return (
     <div className="login-container">
-      <div className="left-section">
-        {/* Replace with your image */}
-        <img src="/src/assets/login.jpg" alt="Login Illustration" className="login-image" />
+      <div className="left-section1">
+        {/* <img 
+          src="/src/assets/login.jpg" 
+          alt="Login Illustration" 
+          className="login-image" 
+        /> */}
       </div>
 
       <div className="right-section">
-        <div className={`login-form ${animate ? 'fade-in' : ''}`}>
+        <div className="login-form fade-in">
           <h2>LOGIN <span style={{color: '#ffcc00'}}>HERE</span></h2>
-          {error && <div className="error-message">{error}</div>}
-          <form onSubmit={handleLogin}>
-            <div className="input-group">
+          <form>
+            <div className="input-group1">
               <label htmlFor="email">Email</label>
-              <input 
-                type="email" 
-                id="email" 
-                value={email} 
-                onChange={(e) => setEmail(e.target.value)} 
-                placeholder="Enter your email" 
-                required 
-              />
+              <input type="email" id="email" placeholder="Enter your email" required />
             </div>
-            <div className="input-group">
+            <div className="input-group1">
               <label htmlFor="password">Password</label>
-              <input 
-                type="password" 
-                id="password" 
-                value={password} 
-                onChange={(e) => setPassword(e.target.value)} 
-                placeholder="Enter your password" 
-                required 
-              />
+              <input type="password" id="password" placeholder="Enter your password" required />
             </div>
+            <Link to='/dashboardadmin'>
             <button type="submit" className="login-button">LOGIN</button>
+            </Link>
           </form>
           <div className="footer-links">
-            <p style={{color:'black'}}>Don't have an account? <a href="/register">Register</a></p>
-            <p><a href="/forgot-password">Forgot Password?</a></p>
+            <p style={{color:'black'}}>Don't have an account? <Link to='/registerorg'> <a href="/registerorg">Register</a></Link></p>
+            <p><a href="">Forgot Password?</a></p>
           </div>
         </div>
       </div>
@@ -70,4 +39,5 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginPage;
+

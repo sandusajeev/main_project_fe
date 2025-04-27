@@ -2,7 +2,6 @@ import React from 'react';
 import '../Organisation/styleorg/OrgHome.css';
 
 function OrgHome() {
-    // Example data (you can fetch actual user data dynamically later)
     const organisation = {
         name: 'ABC Sports Club',
         email: 'abcclub@example.com',
@@ -21,10 +20,10 @@ function OrgHome() {
             <div className="right-section">
                 <h2>Organisation Details</h2>
                 <div className="details-box">
-                    <p><span>Organisation Name:</span> {organisation.name}</p>
-                    <p><span>Email:</span> {organisation.email}</p>
-                    <p><span>Phone Number:</span> {organisation.phone}</p>
-                    <p><span>Address:</span> {organisation.address}</p>
+                    <p><span>Organisation Name:</span> ABC Sports Club</p>
+                    <p><span>Email:</span> abcclub@example.com</p>
+                    <p><span>Phone Number:</span> +91 9876543210</p>
+                    <p><span>Address:</span> Kochi, Kerala, India</p>
                 </div>
             </div>
         </div>

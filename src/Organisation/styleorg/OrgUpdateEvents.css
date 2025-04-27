@@ -1,0 +1,88 @@
+.update-event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #1a1a40, #004080);
+  }
+  
+  .update-event-card {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 850px;
+  }
+  
+  .update-event-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: #002347;
+  }
+  
+  .update-event-card h2 span {
+    color: #ffae00ce;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #002347;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #ffae00ce;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .update-btn {
+    background: #ffae00ce;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-btn:hover {
+    background-color: #e69a00;
+  }
+  

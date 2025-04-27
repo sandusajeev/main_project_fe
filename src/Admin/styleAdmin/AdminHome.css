@@ -1,0 +1,74 @@
+.admin-content {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(to right, #ebe374, #ebe374);
+    min-height: 100%;
+  }
+  
+  .admin-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease forwards;
+  }
+  
+  .admin-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    animation: fadeIn 1.2s ease forwards;
+  }
+  
+  .admin-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    animation: slideInUp 1s ease forwards;
+  }
+  
+  .admin-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .admin-card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+  
+  .admin-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .admin-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-card p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+ 
+  @keyframes slideInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  

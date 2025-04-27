@@ -1,13 +1,17 @@
-/* Container Styling */
+
 .login-container {
   display: flex;
   height: 100vh;
 }
 
-/* Left Section - Full Image */
-.left-section {
-  flex: 1;
+
+.left-section1 {
+  flex: 0.91 !important;
   overflow: hidden;
+  background-image: url("/src/assets/login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .login-image {
@@ -16,17 +20,18 @@
   object-fit: cover;
 }
 
-/* Right Section - Login */
+
 .right-section {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  background-color: rgba(0, 0, 0, 0.897);
+  /* background: linear-gradient(to bottom, #4b4b4b, #000000, #000000, #000000, #272626, #000000) !important; Dark background */
   position: relative;
 }
 
-/* Login Form Styling */
+
 .login-form {
   background-color: #ffffff;
   padding: 40px;
@@ -35,11 +40,11 @@
   width: 100%;
   max-width: 400px;
   text-align: center;
-  opacity: 0; /* Start hidden */
-  transform: translateY(40px); /* Start slightly below */
+  opacity: 0; 
+  transform: translateY(40px); 
 }
 
-/* Animation: Fade-in and slide up */
+
 .fade-in {
   animation: fadeInUp 1s ease forwards;
 }
@@ -55,20 +60,20 @@
   }
 }
 
-/* Input Group Styling */
-.input-group {
+
+.input-group1 {
   margin-bottom: 15px;
   text-align: left;
 }
 
-.input-group label {
+.input-group1 label {
   display: block;
   margin-bottom: 5px;
   font-weight: 600;
   color: #333;
 }
 
-.input-group input {
+.input-group1 input {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -77,12 +82,12 @@
   font-size: 16px;
 }
 
-.input-group input:focus {
-  border-color: #ffcc00;
+.input-group1 input:focus {
+  border-color: #000000;
   outline: none;
 }
 
-/* Login Button */
+
 .login-button {
   width: 100%;
   padding: 12px;
@@ -99,14 +104,7 @@
   background-color: #e6b800;
 }
 
-/* Error Message */
-.error-message {
-  color: #d9534f;
-  margin-bottom: 15px;
-  font-size: 14px;
-}
 
-/* Footer Links */
 .footer-links {
   margin-top: 20px;
   font-size: 14px;

@@ -2,10 +2,9 @@
     display: flex;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    animation: fadeIn 1s ease-in;
   }
   
-  /* Fade-In Animation */
+  
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -17,31 +16,32 @@
     }
   }
   
-  /* Left section */
+ 
   .left-section {
     flex: 1;
-    background-color: #FFD700; /* Bright Yellow */
+    background-color: #FFD700; 
     padding: 60px 40px;
     color: #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: slideLeft 1s ease-in-out;
+    
+  
   }
   
-  /* Right section */
+
   .right-section {
     flex: 1;
-    background-color: #002147; /* Dark Blue */
+    background-color: #002147;
     color: white;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: slideRight 1s ease-in-out;
+  
   }
   
-  /* Slide animations */
+
   @keyframes slideLeft {
     from {
       opacity: 0;
@@ -68,19 +68,24 @@
     font-size: 48px;
     margin-bottom: 20px;
     font-weight: 700;
+    animation: fadeIn 1s ease-in;
+
   }
   
   .left-section p {
     font-size: 18px;
     line-height: 1.6;
     max-width: 500px;
+    animation: fadeIn 1s ease-in; 
+    animation: slideLeft 1s ease-in-out;
   }
   
-  /* Right section styling */
+
   .right-section h2 {
     font-size: 36px;
     margin-bottom: 30px;
     color: #FFD700;
+    animation: fadeIn 1s ease-in; 
   }
   
   .details-box {
@@ -88,19 +93,23 @@
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in;
+    animation: slideRight 1s ease-in-out;
   }
   
   .details-box p {
     font-size: 18px;
     margin-bottom: 15px;
+    
   }
   
   .details-box span {
     font-weight: bold;
     color: #FFD700;
+    
   }
   
-  /* Responsive */
+
   @media (max-width: 768px) {
     .org-home-container {
       flex-direction: column;

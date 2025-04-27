@@ -5,26 +5,26 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <>
-      {/* Carousel Section */}
+     
       <div className='main w-100'>
         <div className="carousel-overlay-text">
           <h1>Welcome to MatchPass</h1>
           <p>Manage. Play. Win.</p>
-          {/* Login Button under the text */}
+          
           <Link to="/login" style={{ textDecoration: 'none', color: "white" }}>
-          <button className='login_btn mt-3'>LOGIN</button>
+          <button className='login_btn mt-3'>GET STARTED</button>
           </Link>
         </div>
         <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="2000">
-              <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/football-field-training-players-with-soccer-ball-free-photo.jpg?w=2210&quality=70" className="d-block w-100" alt="..." />
-            </div>
-            <div className="carousel-item" data-bs-interval="2000">
               <img src="https://img.freepik.com/free-photo/portrait-person-playing-cricket-sport_23-2151702096.jpg" className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-              <img src="https://wallpapercave.com/wp/wp9783210.jpg" className="d-block w-100" alt="..." />
+              <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg" className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item" data-bs-interval="2000">
+              <img src="https://papers.co/wallpaper/papers.co-ay18-tennis-girl-blue-sports-illustration-art-flare-36-3840x2400-4k-wallpaper.jpg" className="d-block w-100" alt="..." />
             </div>
           </div>
         </div>

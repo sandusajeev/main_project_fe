@@ -1,0 +1,107 @@
+.contactus-container {
+    display: flex;
+    min-height: 100vh;
+    background: url('https://www.zavenir.com/assets/uploads/contact-us/b199c5d5ec6574afc6fc1fd0eb893dd1.jpg') no-repeat center center/cover;
+    padding: 50px;
+  }
+  
+ 
+  .contactus-form-container {
+    flex: 0 0 50%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 40px;
+    color: white;
+    animation: slideInLeft 1s ease forwards;
+  }
+  
+ 
+  .contactus-empty {
+    flex: 1;
+  }
+  
+ 
+  .contactus-form-container h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .contactus-form-container h1 span {
+    color: #ffea00;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #666;
+  }
+  
+  .contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffea00;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ffd700;
+    transform: translateY(-5px);
+  }
+  
+ 
+  .contact-details {
+    margin-top: 30px;
+  }
+  
+  .contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-icon {
+    font-size: 24px;
+    color: #ffea00;
+  }
+  
+
+  @keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contactus-container {
+      flex-direction: column;
+    }
+  
+    .contactus-form-container {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  

@@ -1,0 +1,137 @@
+.register-event-container {
+    padding: 40px;
+    background: linear-gradient(135deg, #003366, #001f3f);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .register-event-container h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .register-event-container h2 span {
+    color: #FFD700;
+  }
+  
+  .register-form {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    animation: formSlideUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #002147;
+  }
+  
+  .form-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+  }
+  
+  .payment-logos, .upi-section {
+    margin-top: 5px;
+  }
+  
+  .payment-logos p, .upi-section p {
+    font-weight: 600;
+    color: #002147;
+    margin-bottom: 10px;
+  }
+  
+  .logos, .upi-logos {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .logos img, .upi-logos img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .confirm-btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px;
+    background-color: #FFD700;
+    color: #002147;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes formSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  
+  

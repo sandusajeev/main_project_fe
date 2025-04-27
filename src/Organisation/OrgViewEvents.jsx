@@ -18,16 +18,18 @@ function OrgViewEvents() {
           <p><strong>Category:</strong> Football</p>
           <p><strong>Date:</strong> 2025-05-10 to 2025-05-20</p>
           <p><strong>Time:</strong> 4:00 PM</p>
-          <p><strong>Place:</strong> City Stadium</p>
+          <p><strong>Place:</strong> City Stadium, Ernakulam</p>
           <p><strong>Winner Prize:</strong> ₹50,000</p>
           <p><strong>Age Range:</strong> 17-30</p>
           <p><strong>Registration Fee:</strong> ₹500</p>
 
           <div className="event-buttons">
-          <Link to='/orgviewregclubs'>
+          <Link to='/dashboardorg/orgviewregclubs'>
             <button className="view-btn w-100">View Registered Clubs</button>
             </Link>
+            <Link to='/dashboardorg/orgupdateevents'>
             <button className="update-btn">Update Event</button>
+            </Link>
           </div>
         </div>
 
@@ -41,16 +43,18 @@ function OrgViewEvents() {
           <p><strong>Category:</strong> Badminton</p>
           <p><strong>Date:</strong> 2025-06-01 to 2025-06-05</p>
           <p><strong>Time:</strong> 10:00 AM</p>
-          <p><strong>Place:</strong> Sports Complex</p>
+          <p><strong>Place:</strong> Sports Complex, Kottayam</p>
           <p><strong>Winner Prize:</strong> ₹30,000</p>
           <p><strong>Age Range:</strong> 15-28</p>
           <p><strong>Registration Fee:</strong> ₹300</p>
 
           <div className="event-buttons">
-            <Link to='/orgviewregclubs'>
+            <Link to='/dashboardorg/orgviewregclubs'>
             <button className="view-btn w-100">View Registered Clubs</button>
             </Link>
+            <Link to='/dashboardorg/orgupdateevents'>
             <button className="update-btn">Update Event</button>
+            </Link>
           </div>
         </div>
 

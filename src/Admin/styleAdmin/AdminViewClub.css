@@ -1,0 +1,83 @@
+.admin-club-container {
+    padding: 40px;
+    background: linear-gradient(to right, #001f3f, #003366); 
+    min-height: 100vh;
+  }
+  
+  .admin-club-container h1 {
+    text-align: center;
+    color: #ffea00; 
+    font-size: 36px;
+    margin-bottom: 30px;
+    animation: slideInDown 1s ease forwards;
+  }
+  
+  .admin-club-container h1 span {
+    color: white;
+  }
+  
+  .admin-club-table-container {
+    overflow-x: auto;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 12px;
+    animation: fadeInUp 1.2s ease forwards;
+  }
+  
+  .admin-club-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .admin-club-table th,
+  .admin-club-table td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .admin-club-table thead th {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .admin-club-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .deactivate-btn {
+    background-color: #ffea00;
+    color: #001f3f;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .deactivate-btn:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+  }
+  
+
+  @keyframes fadeInContainer {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes slideInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  

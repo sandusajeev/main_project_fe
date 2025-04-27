@@ -1,102 +1,100 @@
 .add-feedback-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    min-height: 100vh;
-    background: linear-gradient(to right, #002347, #004080);
-    overflow: hidden;
-  }
-  
-  .feedback-card {
-    background: white;
-    padding: 40px 50px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    width: 100%;
-    max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #002347, #004080);
+  overflow: hidden;
+}
+
+.feedback-card {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeSlideIn 1s ease forwards;
+}
+
+.feedback-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feedback-card h2 {
+  text-align: center;
+  color: #002347;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.feedback-card h2 span {
+  color: #ffae00ce;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #002347;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ffae00ce;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #ffae00ce;
+  color: white;
+  padding: 14px;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #e69a00;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeSlideIn {
+  0% {
     opacity: 0;
     transform: translateY(50px);
-    animation: fadeSlideIn 1s ease forwards;
   }
-  
-  .feedback-card.show {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
-  
-  .feedback-card h2 {
-    text-align: center;
-    color: #002347;
-    margin-bottom: 30px;
-    font-size: 28px;
-  }
-  
-  .feedback-card h2 span {
-    color: #ffae00ce;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group label {
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #002347;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    padding: 12px 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-  }
-  
-  .form-group input:focus,
-  .form-group textarea:focus {
-    border-color: #ffae00ce;
-    outline: none;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  .submit-btn {
-    background-color: #ffae00ce;
-    color: white;
-    padding: 14px;
-    border: none;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .submit-btn:hover {
-    background-color: #e69a00;
-    transform: translateY(-2px);
-  }
-  
-  /* Animations */
-  @keyframes fadeSlideIn {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}

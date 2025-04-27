@@ -1,0 +1,51 @@
+.navadmin-container {
+    padding: 20px;
+    background-color: #1b1b1b;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+  
+  .navadmin-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navadmin-link {
+    display: block;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .navadmin-link:hover {
+    background-color: #ffd700;
+    color: black;
+    transform: translateX(10px);
+    border-radius: 0px;
+  }
+  
+  .logoutadmin-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .logoutadmin-button:hover {
+    background-color: #e60000;
+  }
+  
