@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <>
-     
+
       <div className='main w-100'>
         <div className="carousel-overlay-text">
           <h1>Welcome to MatchPass</h1>
           <p>Manage. Play. Win.</p>
-          
+
           <Link to="/login" style={{ textDecoration: 'none', color: "white" }}>
-          <button className='login_btn mt-3'>GET STARTED</button>
+            <button className='login_btn mt-3'>GET STARTED</button>
           </Link>
         </div>
         <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
@@ -30,25 +30,44 @@ function Home() {
         </div>
       </div>
 
-      {/* Register Section */}
-      <div className='w-100' id='second_main'>
-        <h2 className='join-heading text-center'>Join Us Today</h2>
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-md-6 glass-box d-flex flex-column justify-content-center align-items-center' id='register_div'>
-              <p style={{color:'black'}}>Don't have an Account?</p>
-              <div className='d-flex justify-content-center'>
-              <Link to="/registerorg" style={{ textDecoration: 'none', color: "white" }}>
-                <button className='reg_btn me-2'>Register as Organisation</button>
-                </Link>
-                <Link to="/registerclub" style={{ textDecoration: 'none', color: "white" }}>
-                <button className='reg_btn'>Register as Club</button>
-                </Link>
-              </div>
-            </div>
+
+{/* Register Section */}
+<div className="w-100" id="second_main">
+  <div className="container-fluid d-flex" id="register-wrapper">
+    
+    {/* Left side clipped image */}
+    <div className="register-image-section">
+      <img src="/src/assets/registernow.png" alt="Register" className="register-image" />
+    </div>
+
+    {/* Right side glassy box */}
+    <div className="register-content-section">
+      <div className="content-wrapper text-center">
+
+        {/* Join Us Heading Outside */}
+        <h2 className="join-heading">Join Us Today</h2>
+
+        <div className="register-box">
+          <p className="account-text">Don't have an Account?</p>
+          <div className="button-group">
+            <Link to="/registerorg" style={{ textDecoration: 'none' }}>
+              <button className="reg_btn">Register as Organisation</button>
+            </Link>
+            <Link to="/registerclub" style={{ textDecoration: 'none' }}>
+              <button className="reg_btn">Register as Club</button>
+            </Link>
           </div>
         </div>
+
       </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
 
       {/* About Us Section */}
       <div className='w-100' id='thrid_main'>
