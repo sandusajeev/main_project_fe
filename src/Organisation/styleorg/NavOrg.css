@@ -1,8 +1,9 @@
 .nav-container {
     width: 100%;
     padding: 0 30px;
-    height: 80px;
-    background-color: black;
+    height: 80px !important;
+    /* background-color: black; */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
     color: white;
     display: flex;
     justify-content: space-between;
